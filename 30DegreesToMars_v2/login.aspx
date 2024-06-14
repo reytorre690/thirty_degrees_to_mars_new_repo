@@ -79,7 +79,7 @@
                         </div>
 
                         <div class="group">
-                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="SignUp"/>
+                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="Button2_Click"/>
                         </div>
                         <div class="hr"></div>
                     </div>
