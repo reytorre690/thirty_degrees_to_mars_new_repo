@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="_30DegreesToMars_v2.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="_30DegreesToMars_v2.login" %>
 
 <!DOCTYPE html>
 
@@ -79,57 +79,15 @@
                         </div>
 
                         <div class="group">
-                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="Button2_Click"/>
+                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="SignUp"/>
+                            <asp:Label ID="Label2" runat="server" Visible="false" Text="Error" Style="font-size: 20px; font-family: 'Arial Rounded MT';"></asp:Label>
                         </div>
                         <div class="hr"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Main 
-        <div class="main-container">
-            <div class="table">
-                <div class="th">
-                    <asp:Label ID="Label2" runat="server" Text="LOG IN"></asp:Label>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <asp:Label ID="Label3" runat="server" Text="USERNAME:"></asp:Label>
-                    </div>
-                    <div class="td">
-                        <asp:TextBox ID="TextBox1" class="ip1" runat="server"></asp:TextBox>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <asp:Label ID="Label4" runat="server" Text="PASSWORD:"></asp:Label>
-                    </div>
-                    <div class="td">
-                        <asp:TextBox ID="TextBox2" class="ip1" runat="server"></asp:TextBox>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <asp:CheckBox ID="CheckBox1" runat="server" class="rememberme" Text="Remember me?" />
-                        <a href="registration.aspx">Create an account.</a>
-                    </div>
-                    
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <asp:Button ID="Button2" runat="server" class="subbutton" Text="SUBMIT" OnClick="Button2_Click" />
-                        <div class="line"></div>
-                        <i>
-                            <asp:Label ID="Label6" runat="server" class="ofisg" Text="Our family is growing."></asp:Label></i>
-                        <asp:Label ID="Label5" runat="server" class="pmg1" Text="Project Mars"></asp:Label>
-                        <asp:Label ID="Label7" runat="server" class="pmg2" Text="Greenhouse"></asp:Label>
-                    </div>
-                </div>
-            </div>
-            <img src="Astro.jpg" style="width: 300px; height: 492px" alt="Image">
-            </div>
-                
-         -->
+      
         <div class="footer-container">
             <asp:Label ID="Label8" runat="server" Text="TALK TO US" Style="font-size: 20px; font-family: 'Arial Rounded MT';"></asp:Label>
             <asp:Label ID="Label9" runat="server" class="text-footer" Text="(04) 298 3985 2092"></asp:Label>

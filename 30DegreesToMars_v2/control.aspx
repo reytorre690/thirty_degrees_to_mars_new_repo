@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="control.aspx.cs" Inherits="_30DegreesToMars_v2.control" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="control.aspx.cs" Inherits="_30DegreesToMars_v2.control" %>
 
 <!-- #include file="navbar.html" -->
 
@@ -114,20 +114,7 @@
                      </div>
                     </div>
         </div>
-         <div  class="row">
-            <asp:Label ID="Label1" runat="server" Text="Fitler by Name:"></asp:Label>
-            <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
-            <asp:Button ID="ButtonFilter" runat="server" Text="Filter" OnClick="ButtonFilter_Click" />
-            <asp:Button ID="ButtonClear" runat="server" Text="Clear Filter" OnClick="ButtonClear_Click"/>
-     </div>
-     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowSorting="true" OnSorting="GridView1_Sorting">
-     <Columns>
-         <asp:BoundField DataField="ControlParameter" HeaderText="ControlParameter" SortExpression="ControlParameter" />
-         <asp:BoundField DataField="CurrentValue" HeaderText="CurrentValue" SortExpression="CurrentValue" />
-         <asp:BoundField DataField="Unit" HeaderText="Unit" SortExpression="Unit" />
-         <asp:BoundField DataField="Dateupdated" HeaderText="Dateupdated" SortExpression="Dateupdated" />
-     </Columns>
-     </asp:GridView>
+
 
         </div>
         <div class="row">

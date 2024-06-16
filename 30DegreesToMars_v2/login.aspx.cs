@@ -21,14 +21,14 @@ namespace _30DegreesToMars_v2
         public void SignUp(object sender, EventArgs e)
         {
 
-            RequiredFieldValidator1.Enabled = true;
-            RequiredFieldValidator2.Enabled = true;
-            RequiredFieldValidator3.Enabled = true;
-            RequiredFieldValidator4.Enabled = true;
-            RequiredFieldValidator5.Enabled = true;
-            RequiredFieldValidator6.Enabled = true;
-            RequiredFieldValidator7.Enabled = false;
-            RequiredFieldValidator8.Enabled = false;
+            //RequiredFieldValidator1.Enabled = true;
+            //RequiredFieldValidator2.Enabled = true;
+            //RequiredFieldValidator3.Enabled = true;
+            //RequiredFieldValidator4.Enabled = true;
+            //RequiredFieldValidator5.Enabled = true;
+            //RequiredFieldValidator6.Enabled = true;
+            //RequiredFieldValidator7.Enabled = false;
+            //RequiredFieldValidator8.Enabled = false;
 
             if (!Page.IsValid)
             {
@@ -140,14 +140,14 @@ namespace _30DegreesToMars_v2
         public void SignIn(object sender, EventArgs e)
         {
 
-            RequiredFieldValidator1.Enabled = false; // Change the IDs as per your actual control IDs
-            RequiredFieldValidator2.Enabled = false;
-            RequiredFieldValidator3.Enabled = false;
-            RequiredFieldValidator4.Enabled = false;
-            RequiredFieldValidator5.Enabled = false;
-            RequiredFieldValidator6.Enabled = false;
-            RequiredFieldValidator7.Enabled = true;
-            RequiredFieldValidator8.Enabled = true;
+            //RequiredFieldValidator1.Enabled = false; // Change the IDs as per your actual control IDs
+            //RequiredFieldValidator2.Enabled = false;
+            //RequiredFieldValidator3.Enabled = false;
+            //RequiredFieldValidator4.Enabled = false;
+            //RequiredFieldValidator5.Enabled = false;
+            //RequiredFieldValidator6.Enabled = false;
+            //RequiredFieldValidator7.Enabled = true;
+            //RequiredFieldValidator8.Enabled = true;
 
             string usernameSI = userSI.Text;
             string passwordSI = passSI.Text;

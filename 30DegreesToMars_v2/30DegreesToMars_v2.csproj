@@ -76,6 +76,7 @@
     <Content Include="Registration.aspx" />
     <Content Include="style.css" />
     <Content Include="successfully_signedup.aspx" />
+    <Content Include="summary.aspx" />
     <Content Include="unsuccessful_signedup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="successfully_signedup.aspx.designer.cs">
       <DependentUpon>successfully_signedup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="summary.aspx.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="summary.aspx.designer.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
     </Compile>
     <Compile Include="unsuccessful_signedup.aspx.cs">
       <DependentUpon>unsuccessful_signedup.aspx</DependentUpon>
