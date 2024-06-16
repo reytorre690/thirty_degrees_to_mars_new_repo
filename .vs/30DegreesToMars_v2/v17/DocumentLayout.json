@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "30DegreesToMars_v2\\login.aspx.cs",
               "ToolTip": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\login.aspx.cs",
               "RelativeToolTip": "30DegreesToMars_v2\\login.aspx.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAkwJUAAAA1AAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAkwKUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T22:37:51.402Z",
               "EditorCaption": ""
@@ -118,18 +118,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "control.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\control.aspx.cs",
-              "RelativeDocumentMoniker": "30DegreesToMars_v2\\control.aspx.cs",
-              "ToolTip": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\control.aspx.cs",
-              "RelativeToolTip": "30DegreesToMars_v2\\control.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T16:54:36.598Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\login.aspx",
@@ -140,6 +128,22 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-06-16T17:25:21.863Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "control.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\control.aspx.cs",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\control.aspx.cs",
+              "ToolTip": "C:\\Users\\rey\\source\\repos\\thirty_degrees_to_mars_new_repo\\30DegreesToMars_v2\\control.aspx.cs",
+              "RelativeToolTip": "30DegreesToMars_v2\\control.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:54:36.598Z"
             },
             {
               "$type": "Document",

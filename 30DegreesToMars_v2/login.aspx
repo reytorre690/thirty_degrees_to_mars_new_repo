@@ -45,7 +45,8 @@
                             <label for="check"><span class="icon"></span> Keep me Signed in</label>
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Sign In">
+                            <%--<input type="submit" class="button" value="Sign In"  onclick="SignIn">--%>
+                            <asp:Button ID="Button2" runat="server" class="button" Text="SignIn" onclick="SignIn"/>
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">

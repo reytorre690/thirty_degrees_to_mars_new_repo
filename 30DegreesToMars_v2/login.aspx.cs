@@ -155,7 +155,7 @@ namespace _30DegreesToMars_v2
 
             if (does_userid_pwd_exist)
             {
-                Response.Redirect("~/dashboard.aspx");
+                Response.Redirect("~/control.aspx");
             }
             else
             {
