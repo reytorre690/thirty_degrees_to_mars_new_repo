@@ -8,6 +8,14 @@
 <head runat="server">
     <title>Control Panel</title>
     <!-- Theme style -->
+        <!-- BOOTSTRAP STYLES-->
+    <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
+    <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,74 +44,92 @@
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-2 col-1">
-                <!-- small box -->
-                <div class="small-box bg-info">
-                    <div class="inner">
-                        <h4>Strawberry</h4>
-                           <img alt="tomato" src="img\strawberry.png" height="60" width="60">
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="tomato" src="img\strawberry.png" height="60" width="60">
+                                <h3> Strawberry </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+
+                            </div>
+                        </div>
                     </div>
-                       <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox1" runat="server" /></a>
-                </div>
-            </div>
-            <!-- ./col -->
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="mushroom" src="img\mushroom.png" height="60" width="60">
+                                <h3> Mushroom </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
+                    </div>
 
-   <!-- Small boxes (Mushroom) -->
-       <div class="col-lg-2 col-2">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Mushroom</h4>
-                   <img alt="tomato" src="img\mushroom.png" height="60" width="60">
-               </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox2" runat="server" /></a>
-           </div>
-       </div>
+           <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="tomato" src="img\tomato.jpg" height="60" width="60">
+                                <h3> Tomato </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
+                    </div>
 
-       <!-- Small boxes (Tomato) -->
-       <div class="col-lg-2 col-3">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Tomato</h4>
-                   <img alt="tomato" src="img\tomato.jpg" height="60" width="60">
+               <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="watermelon" src="img\watermelon.jpeg" height="60" width="60">
+                                <h3> Watermelon </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
                </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox3" runat="server" /></a>
-           </div>
-       </div>
 
-       <!-- Small boxes (Watermelon) -->
-       <div class="col-lg-2 col-4">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Watermelon</h4>
-                   <img alt="watermelon" src="img\watermelon.jpeg" height="60" width="60">
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="wheat" src="img\wheat.png" height="60" width="60">
+                                <h3> Wheat </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
                </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox4" runat="server" /></a>
-           </div>
-       </div>
 
-       <!-- Small boxes (Wheat) -->
-       <div class="col-lg-2 col-5">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Wheat</h4>
-                   <img alt="wheat" src="img\wheat.png" height="60" width="60">
-               </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox5" runat="server" /></a>
-           </div>
-       </div>
    </div>
-            <div class="row">
-                 <div class="col-lg-3 col-6">
-                   <asp:Button ID="Button1" runat="server" Text="Apply" />
-                  </div>
-                 <div class="col-lg-2 col-3">
-                   <asp:Button ID="Button2" runat="server" Text="Apply to All" />
-                 </div>
-             </div>
+      <div class="row">
+                <div class="col-md-6">
+                 <h3>Overall Health</h3>
+                  <div class="progress progress-striped">
+                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                   <span class="sr-only">40% Complete (success)</span>
+                     </div>
+                    </div>
+        </div>
+         <div  class="row">
+            <asp:Label ID="Label1" runat="server" Text="Fitler by Name:"></asp:Label>
+            <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
+            <asp:Button ID="ButtonFilter" runat="server" Text="Filter" OnClick="ButtonFilter_Click" />
+            <asp:Button ID="ButtonClear" runat="server" Text="Clear Filter" OnClick="ButtonClear_Click"/>
+     </div>
+     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowSorting="true" OnSorting="GridView1_Sorting">
+     <Columns>
+         <asp:BoundField DataField="ControlParameter" HeaderText="ControlParameter" SortExpression="ControlParameter" />
+         <asp:BoundField DataField="CurrentValue" HeaderText="CurrentValue" SortExpression="CurrentValue" />
+         <asp:BoundField DataField="Unit" HeaderText="Unit" SortExpression="Unit" />
+         <asp:BoundField DataField="Dateupdated" HeaderText="Dateupdated" SortExpression="Dateupdated" />
+     </Columns>
+     </asp:GridView>
+
+        </div>
         <div class="row">
         <a>Temperature: <input id="temp" type="text" placeholder="5"/> Degrees</a>
         <input id="Button1" type="button" value="Save" />      
