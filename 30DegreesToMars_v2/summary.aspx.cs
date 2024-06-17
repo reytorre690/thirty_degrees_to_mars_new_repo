@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.Common;
 
 namespace _30DegreesToMars_v2
 {
@@ -108,6 +109,28 @@ namespace _30DegreesToMars_v2
             ViewState["SortDirection"] = newSortDirection;
 
             return newSortDirection;
+        }
+
+        public string getWhileLoopData()
+        {
+            string htmlStr = "";
+            string connectionString = ConfigurationManager.ConnectionStrings["dbconnection2"].ConnectionString;
+            SqlConnection thisConnection = new SqlConnection(connectionString);
+            SqlCommand thisCommand = thisConnection.CreateCommand();
+            thisCommand.CommandText = "SELECT status, severity, message from project_MIS332.dbo.vw_latest_message_summaries";
+            thisConnection.Open();
+            SqlDataReader reader = thisCommand.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string status = reader.GetString(0);
+                string severity = reader.GetString(1);
+                string message = reader.GetString(2);
+                htmlStr += "<tr><td>" + status + "</td><td>" + severity + "</td><td>" + message + "</td></tr>";
+            }
+
+            thisConnection.Close();
+            return htmlStr;
         }
     }
 }

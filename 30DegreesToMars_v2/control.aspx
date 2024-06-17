@@ -118,18 +118,39 @@
 
         </div>
         <div class="row">
-        <a>Temperature: <input id="temp" type="text" placeholder="5"/> Degrees</a>
-        <input id="Button1" type="button" value="Save" />      
-       </div>
-         <div class="row">
-        <a>Humidity: <input id="humidity" type="text" placeholder="25"/> Pascal</a>
-        <input id="Button2" type="button" value="Save" />      
-       </div>
-         <div class="row">
-        <a>Power: <input id="Text1" type="text" placeholder="8"/> Kilowattl</a>     
-        <input id="Button3" type="button" value="Save" />      
+        <asp:DropDownList ID="param" runat="server" onchange="VChanged()">
+            <asp:ListItem Enabled="true" Text="Select Control Parameter" Value="-1"></asp:ListItem>
+            <asp:ListItem Text="Temperature" Value="temperature"></asp:ListItem>
+            <asp:ListItem Text="Power" Value="power"></asp:ListItem>
+            <asp:ListItem Text="Humidity" Value="humidity"></asp:ListItem>
+        </asp:DropDownList>
+            
+
+            <asp:TextBox ID="inputvariable" runat="server" type="text" class="input"></asp:TextBox>
+            <asp:Label ID="unitlabel" runat="server" Text="Unit"></asp:Label>
+            <asp:Button ID="Button2" runat="server" Text="Save"  Onclick="Insert_new_params"/>
        </div>
        </div>
     </form>
 </body>
+    <script>
+        function VChanged() 
+        {
+           var control = document.getElementById('<%= param.ClientID %>');
+           var selectedvalue = control.options[control.selectedIndex].value;
+
+            if (selectedvalue == "temperature") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Celcius';
+            }
+            else if (selectedvalue == "power") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Kilo Volts';
+            }
+            else if (selectedvalue == "humidity") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'g/m3';
+            }
+            else {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Unit';
+            }
+        }
+    </script>
 </html>

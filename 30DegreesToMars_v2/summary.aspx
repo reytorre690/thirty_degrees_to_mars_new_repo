@@ -29,6 +29,16 @@
     </Columns>
     </asp:GridView>
         </div>
+            <table width="100%" align="center" cellpadding="2" cellspacing="2" border="0" bgcolor="#EAEAEA" >
+        <tr align="left" style="background-color:#004080;color:White;" >
+            <td> Status </td>                        
+            <td> Severity </td>            
+            <td> Message </td>                        
+        </tr>
+
+        <%=getWhileLoopData()%>
+
+        </table>
             </div>
              </div>
     </form>
