@@ -105,6 +105,8 @@
                </div>
 
    </div>
+        <hr />
+
       <div class="row">
                 <div class="col-md-6">
                  <h3>Overall Health</h3>
@@ -117,7 +119,13 @@
 
 
         </div>
+        <hr />
+
         <div class="row">
+            <h3>Parameter Setting</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
         <asp:DropDownList ID="param" runat="server" onchange="VChanged()">
             <asp:ListItem Enabled="true" Text="Select Control Parameter" Value="-1"></asp:ListItem>
             <asp:ListItem Text="Temperature" Value="temperature"></asp:ListItem>
@@ -131,6 +139,7 @@
             <asp:Button ID="Button2" runat="server" Text="Save"  Onclick="Insert_new_params"/>
        </div>
        </div>
+        </div>
     </form>
 </body>
     <script>

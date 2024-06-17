@@ -132,5 +132,28 @@ namespace _30DegreesToMars_v2
             thisConnection.Close();
             return htmlStr;
         }
+
+        public string Getreferencetable()
+        {
+            string htmlStr = "";
+            string connectionString = ConfigurationManager.ConnectionStrings["dbconnection2"].ConnectionString;
+            SqlConnection thisConnection = new SqlConnection(connectionString);
+            SqlCommand thisCommand = thisConnection.CreateCommand();
+            thisCommand.CommandText = "select control_name, min_value, max_value, tolerance from project_MIS332.dbo.vw_show_acceptable_paramters";
+            thisConnection.Open();
+            SqlDataReader reader = thisCommand.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string control_name = reader.GetString(0);
+                string min_value = reader.GetString(1);
+                string max_value = reader.GetString(2);
+                string tolerance = reader.GetString(3);
+                htmlStr += "<tr><td>" + control_name + "</td><td>" + min_value + "</td><td>" + max_value + "</td><td>" + tolerance + "</td></tr>";
+            }
+
+            thisConnection.Close();
+            return htmlStr;
+        }
     }
 }
