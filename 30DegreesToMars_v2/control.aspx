@@ -169,17 +169,13 @@
     </script>
     <script>
         const ctx = document.getElementById('myChart');
-        var dates = '<%=date%>';
-        var values = '<%=values%>';
-
-        console.log(values)
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: [1,2,3,4,5],
+                labels: [1,2,3,4,5,6,7,8,9,10,11,12,13],
                 datasets: [{
                     label: 'Overall Health',
-                    data: [1, 2, 3, 4, 5],
+                    data: [89, 81, 85, 79, 81, 84, 86, 82, 85, 87, 88, 86, 93],
                     borderWidth: 1
                 }]
             },
