@@ -16,6 +16,7 @@
     <link href="css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -110,11 +111,15 @@
       <div class="row">
                 <div class="col-md-6">
                  <h3>Overall Health</h3>
-                  <div class="progress progress-striped">
-                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                   <span class="sr-only">40% Complete (success)</span>
-                     </div>
-                    </div>
+                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                    <canvas id="myChart"></canvas>
+                  <%--<div class="progress progress-striped">--%>
+<%--                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                   <span class="sr-only">40% Complete (success)</span>--%>
+                       
+
+<%--                     </div>
+                    </div>--%>
         </div>
 
 
@@ -161,5 +166,30 @@
                 document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Unit';
             }
         }
+    </script>
+    <script>
+        const ctx = document.getElementById('myChart');
+        var dates = '<%=date%>';
+        var values = '<%=values%>';
+
+        console.log(values)
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [1,2,3,4,5],
+                datasets: [{
+                    label: 'Overall Health',
+                    data: [1, 2, 3, 4, 5],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
     </script>
 </html>

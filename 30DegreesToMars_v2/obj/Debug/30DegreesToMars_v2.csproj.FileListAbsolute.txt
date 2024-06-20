@@ -234,3 +234,16 @@ C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\obj
 C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\obj\Debug\30Degree.891C3830.Up2Date
 C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\obj\Debug\30DegreesToMars_v2.dll
 C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\obj\Debug\30DegreesToMars_v2.pdb
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Helpers.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Mvc.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Razor.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.Razor.dll
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Helpers.xml
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Mvc.xml
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.Razor.xml
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.xml
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rey\source\repos\thirty_degrees_to_mars_new_repo\30DegreesToMars_v2\bin\System.Web.WebPages.Razor.xml
