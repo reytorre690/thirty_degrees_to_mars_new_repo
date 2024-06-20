@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="_30DegreesToMars_v2.dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="dashboard.aspx.cs" Inherits="_30DegreesToMars_v2.dashboard" %>
 
 <!-- #include file="navbar.html" -->
 

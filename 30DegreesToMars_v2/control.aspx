@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="control.aspx.cs" Inherits="_30DegreesToMars_v2.control" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="control.aspx.cs" Inherits="_30DegreesToMars_v2.control" %>
 
 <!-- #include file="navbar.html" -->
 
@@ -8,6 +8,15 @@
 <head runat="server">
     <title>Control Panel</title>
     <!-- Theme style -->
+        <!-- BOOTSTRAP STYLES-->
+    <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
+    <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,87 +45,147 @@
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-2 col-1">
-                <!-- small box -->
-                <div class="small-box bg-info">
-                    <div class="inner">
-                        <h4>Strawberry</h4>
-                           <img alt="tomato" src="img\strawberry.png" height="60" width="60">
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="tomato" src="img\strawberry.png" height="60" width="60">
+                                <h3> Strawberry </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+
+                            </div>
+                        </div>
                     </div>
-                       <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox1" runat="server" /></a>
-                </div>
-            </div>
-            <!-- ./col -->
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="mushroom" src="img\mushroom.png" height="60" width="60">
+                                <h3> Mushroom </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
+                    </div>
 
-   <!-- Small boxes (Mushroom) -->
-       <div class="col-lg-2 col-2">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Mushroom</h4>
-                   <img alt="tomato" src="img\mushroom.png" height="60" width="60">
-               </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox2" runat="server" /></a>
-           </div>
-       </div>
+           <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="tomato" src="img\tomato.jpg" height="60" width="60">
+                                <h3> Tomato </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
+                    </div>
 
-       <!-- Small boxes (Tomato) -->
-       <div class="col-lg-2 col-3">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Tomato</h4>
-                   <img alt="tomato" src="img\tomato.jpg" height="60" width="60">
+               <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="watermelon" src="img\watermelon.jpeg" height="60" width="60">
+                                <h3> Watermelon </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
                </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox3" runat="server" /></a>
-           </div>
-       </div>
 
-       <!-- Small boxes (Watermelon) -->
-       <div class="col-lg-2 col-4">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Watermelon</h4>
-                   <img alt="watermelon" src="img\watermelon.jpeg" height="60" width="60">
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <img alt="wheat" src="img\wheat.png" height="60" width="60">
+                                <h3> Wheat </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Monitored
+                            </div>
+                        </div>
                </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox4" runat="server" /></a>
-           </div>
-       </div>
 
-       <!-- Small boxes (Wheat) -->
-       <div class="col-lg-2 col-5">
-           <!-- small box -->
-           <div class="small-box bg-info">
-               <div class="inner">
-                   <h4>Wheat</h4>
-                   <img alt="wheat" src="img\wheat.png" height="60" width="60">
-               </div>
-               <a href="#" class="small-box-footer">Apply <asp:CheckBox ID="CheckBox5" runat="server" /></a>
-           </div>
-       </div>
    </div>
-            <div class="row">
-                 <div class="col-lg-3 col-6">
-                   <asp:Button ID="Button1" runat="server" Text="Apply" />
-                  </div>
-                 <div class="col-lg-2 col-3">
-                   <asp:Button ID="Button2" runat="server" Text="Apply to All" />
-                 </div>
-             </div>
+        <hr />
+
+      <div class="row">
+                <div class="col-md-6">
+                 <h3>Overall Health</h3>
+                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                    <canvas id="myChart"></canvas>
+                  <%--<div class="progress progress-striped">--%>
+<%--                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                   <span class="sr-only">40% Complete (success)</span>--%>
+                       
+
+<%--                     </div>
+                    </div>--%>
+        </div>
+
+
+        </div>
+        <hr />
+
         <div class="row">
-        <a>Temperature: <input id="temp" type="text" placeholder="5"/> Degrees</a>
-        <input id="Button1" type="button" value="Save" />      
+            <h3>Parameter Setting</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+        <asp:DropDownList ID="param" runat="server" onchange="VChanged()">
+            <asp:ListItem Enabled="true" Text="Select Control Parameter" Value="-1"></asp:ListItem>
+            <asp:ListItem Text="Temperature" Value="temperature"></asp:ListItem>
+            <asp:ListItem Text="Power" Value="power"></asp:ListItem>
+            <asp:ListItem Text="Humidity" Value="humidity"></asp:ListItem>
+        </asp:DropDownList>
+            
+
+            <asp:TextBox ID="inputvariable" runat="server" type="text" class="input"></asp:TextBox>
+            <asp:Label ID="unitlabel" runat="server" Text="Unit"></asp:Label>
+            <asp:Button ID="Button2" runat="server" Text="Save"  Onclick="Insert_new_params"/>
        </div>
-         <div class="row">
-        <a>Humidity: <input id="humidity" type="text" placeholder="25"/> Pascal</a>
-        <input id="Button2" type="button" value="Save" />      
        </div>
-         <div class="row">
-        <a>Power: <input id="Text1" type="text" placeholder="8"/> Kilowattl</a>     
-        <input id="Button3" type="button" value="Save" />      
-       </div>
-       </div>
+        </div>
     </form>
 </body>
+    <script>
+        function VChanged() 
+        {
+           var control = document.getElementById('<%= param.ClientID %>');
+           var selectedvalue = control.options[control.selectedIndex].value;
+
+            if (selectedvalue == "temperature") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Celcius';
+            }
+            else if (selectedvalue == "power") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Kilo Volts';
+            }
+            else if (selectedvalue == "humidity") {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'g/m3';
+            }
+            else {
+                document.getElementById('<%=unitlabel.ClientID%>').innerHTML = 'Unit';
+            }
+        }
+    </script>
+    <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [1,2,3,4,5,6,7,8,9,10,11,12,13],
+                datasets: [{
+                    label: 'Overall Health',
+                    data: [89, 81, 85, 79, 81, 84, 86, 82, 85, 87, 88, 86, 93],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </html>

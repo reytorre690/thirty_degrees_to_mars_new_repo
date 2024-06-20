@@ -21,14 +21,14 @@ namespace _30DegreesToMars_v2
         public void SignUp(object sender, EventArgs e)
         {
 
-            RequiredFieldValidator1.Enabled = true;
-            RequiredFieldValidator2.Enabled = true;
-            RequiredFieldValidator3.Enabled = true;
-            RequiredFieldValidator4.Enabled = true;
-            RequiredFieldValidator5.Enabled = true;
-            RequiredFieldValidator6.Enabled = true;
-            RequiredFieldValidator7.Enabled = false;
-            RequiredFieldValidator8.Enabled = false;
+            //RequiredFieldValidator1.Enabled = true;
+            //RequiredFieldValidator2.Enabled = true;
+            //RequiredFieldValidator3.Enabled = true;
+            //RequiredFieldValidator4.Enabled = true;
+            //RequiredFieldValidator5.Enabled = true;
+            //RequiredFieldValidator6.Enabled = true;
+            //RequiredFieldValidator7.Enabled = false;
+            //RequiredFieldValidator8.Enabled = false;
 
             if (!Page.IsValid)
             {
@@ -53,7 +53,7 @@ namespace _30DegreesToMars_v2
             else
             {
                 Insert(finame, laname, dateob, userSUid, pwd, rpwd);
-                Response.Redirect("~/SignUpSuccessful.aspx");
+                Response.Redirect("~/login.aspx");
             }
         }
 
@@ -72,8 +72,8 @@ namespace _30DegreesToMars_v2
                         cmd.Connection = con;
                         cmd.CommandText =
                             "SELECT COUNT (*) AS count " +
-                            "FROM [30DegreesToMars].[dbo].[SignUp] " +
-                            "WHERE [User_Name_SU] = @User_Name_SUparameter";
+                            "FROM [project_MIS332].[dbo].[users] " +
+                            "WHERE [userid] = @User_Name_SUparameter";
 
                         cmd.Parameters.AddWithValue("@User_Name_SUparameter", userSUid);
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -116,7 +116,7 @@ namespace _30DegreesToMars_v2
                         con.Open();
                         cmd.Connection = con;
                         cmd.CommandText =
-                            "INSERT INTO[30DegreesToMars].[dbo].[SignUp] ([First_Name], [Last_Name], [Date_of_Birth], [User_Name_SU], [Password_SU],[Repeat_Password], [Registered_Date])" +
+                            "INSERT INTO[project_MIS332].[dbo].[users] ([fname], [lname], [dob], [userid], [password],[repeatpassword], [registeredon])" +
                             "VALUES " +
                             "(@First_Name, @Last_Name, @Date_of_Birth, @User_Name_SU, @Password_SU,@Repeat_Password, GETDATE())";
 
@@ -140,14 +140,14 @@ namespace _30DegreesToMars_v2
         public void SignIn(object sender, EventArgs e)
         {
 
-            RequiredFieldValidator1.Enabled = false; // Change the IDs as per your actual control IDs
-            RequiredFieldValidator2.Enabled = false;
-            RequiredFieldValidator3.Enabled = false;
-            RequiredFieldValidator4.Enabled = false;
-            RequiredFieldValidator5.Enabled = false;
-            RequiredFieldValidator6.Enabled = false;
-            RequiredFieldValidator7.Enabled = true;
-            RequiredFieldValidator8.Enabled = true;
+            //RequiredFieldValidator1.Enabled = false; // Change the IDs as per your actual control IDs
+            //RequiredFieldValidator2.Enabled = false;
+            //RequiredFieldValidator3.Enabled = false;
+            //RequiredFieldValidator4.Enabled = false;
+            //RequiredFieldValidator5.Enabled = false;
+            //RequiredFieldValidator6.Enabled = false;
+            //RequiredFieldValidator7.Enabled = true;
+            //RequiredFieldValidator8.Enabled = true;
 
             string usernameSI = userSI.Text;
             string passwordSI = passSI.Text;
@@ -155,7 +155,7 @@ namespace _30DegreesToMars_v2
 
             if (does_userid_pwd_exist)
             {
-                Response.Redirect("~/SignUpSuccessful.aspx");
+                Response.Redirect("~/control.aspx");
             }
             else
             {
@@ -176,8 +176,8 @@ namespace _30DegreesToMars_v2
                 {
                     con1.Open();
                     using (SqlCommand cmd1 = new SqlCommand("SELECT COUNT (*) AS count " +
-                        "FROM [30DegreesToMars].[dbo].[SignUp] " +
-                        "WHERE [User_Name_SU] = @User_Name_SUparameter AND [Password_SU] = @Password_SUparameter", con1))
+                        "FROM [project_MIS332].[dbo].[users] " +
+                        "WHERE [userid] = @User_Name_SUparameter AND [password] = @Password_SUparameter", con1))
                     {
                         cmd1.Parameters.AddWithValue("@User_Name_SUparameter", usernameSI);
                         cmd1.Parameters.AddWithValue("@Password_SUparameter", passwordSI);
@@ -210,4 +210,3 @@ namespace _30DegreesToMars_v2
         }
     }
 }
-//just a comment
