@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Dashboard</title>
 </head>
@@ -124,14 +124,29 @@
     <asp:RadioButton ID="RadioButton2" runat="server" Text="Cereals" />
     <asp:RadioButton ID="RadioButton1" runat="server" Text="Veggies" />
     <asp:RadioButton ID="RadioButton3" runat="server" Text="Fruits" />
-
+    
 </asp:TableCell>
-</asp:TableRow>
+</asp:TableRow >
 
  </asp:Table>
 
-    </center>
+    </center-->
+    
+        
 
+         </body>
+ <div class="row">
+<table width="50%" align="center" cellpadding="2" cellspacing="2" border="0" bgcolor="#EAEAEA">
+ <tr align="left" style="background-color:#b8fbff;color:Black;" >
+     <td> Variable </td>                        
+     <td> Date Recorded </td>            
+     <td> Average Measurement </td>
+ </tr>
+
+ <%=Getreferencetable()%>
+
+ </table>
+ </div>
     </form>
 </body>
-</html>
+</!--html>

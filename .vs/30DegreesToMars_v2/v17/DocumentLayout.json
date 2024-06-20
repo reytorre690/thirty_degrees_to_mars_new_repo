@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|c:\\users\\administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\summary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\summary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\summary.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\summary.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\control.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\control.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30degreestomars_v2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{657D405B-AD89-4757-88DF-4636C861AF08}|30DegreesToMars_v2\\30DegreesToMars_v2.csproj|solutionrelative:30degreestomars_v2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +45,78 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dashboard.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\dashboard.aspx.cs",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\dashboard.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\dashboard.aspx.cs",
+              "RelativeToolTip": "30DegreesToMars_v2\\dashboard.aspx.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAuwBMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:22:09.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "summary.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\summary.aspx.cs",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\summary.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\summary.aspx.cs",
+              "RelativeToolTip": "30DegreesToMars_v2\\summary.aspx.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAAAJwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:21:42.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "summary.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\summary.aspx",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\summary.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\summary.aspx",
+              "RelativeToolTip": "30DegreesToMars_v2\\summary.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-18T03:17:08.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "control.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\control.aspx",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\control.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\control.aspx",
+              "RelativeToolTip": "30DegreesToMars_v2\\control.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-18T03:16:53.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dashboard.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\dashboard.aspx",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\dashboard.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\dashboard.aspx",
+              "RelativeToolTip": "30DegreesToMars_v2\\dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-18T02:52:06.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\Web.config",
+              "RelativeDocumentMoniker": "30DegreesToMars_v2\\Web.config",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\thirty_degrees_to_mars_new_repo2\\30DegreesToMars_v2\\Web.config",
+              "RelativeToolTip": "30DegreesToMars_v2\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-18T02:51:54.501Z",
+              "EditorCaption": ""
             }
           ]
         }
